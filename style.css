@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(148, 38%, 91%);
+    width: 100%;
+    height: 100vh;
+}
+
+div{
+    margin-bottom: 15px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=email]{
+    padding: 12px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+textarea{
+    padding: 12px;
+    border-radius: 7px;
+    height: auto;
+    width: 100%;
+    resize: none;
+}
+
+input[type=radio]{
+    accent-color: red;
+}
+
+input[type=checkbox]{
+    margin-right: 8px;
+}
+
+.container{
+    margin: 16px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 80%;
+    width: 40%;
+    border-radius: 14px;
+}
+
+/* .form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+/* user-info */
+
+.user-info__input{
+    width: 100%;
+}
+
+.user-info div{
+    display: inline;
+    float: left;
+    width: 48%;
+}
+
+.user-info div:first-child{
+    margin-right: 4%;
+}
+
+/*-------------------------------*/
+
+/*-query-type-*/
+
+.query-type-tittle{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.query-type-box div{
+    width: 48%;
+    display: inline;
+    float: left;
+}
+
+.query-type-box div:first-child{
+    margin-right: 4%;
+}
+
+
+.query-type-box__label-box{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 100%;
+}
+
+input[type=radio]:checked + span{
+    color: blue;
+}
+
+
+
+/*-----------------------------------*/
+
+/*-communications-agreement-*/
+.communications-agreement{
+}
+
+.communications-agreement label{
+}
+
+
+.communications-agreement__checkbox{
+    /* accent-color: ;  for checkbox color*/
+    padding-left: 10px;
+}
+
+
+/*---------------- */
+
+
+/*-submit-button- */
+
+.submit-button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    border-style: none;
+    padding: 18px;
+}
+
+
+/*---------------- */
+
+
+

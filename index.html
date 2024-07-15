@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+  <main class="container">
+    <h2>Contact Us</h2>
+    <form class="form-container" action="">
+          <div class="user-info">
+            <div>
+              <label class="user-info__label" for="fname">First Name</label>
+              <input class="user-info__input" type="text" id="fname">
+            </div>
+            <div>
+              <label class="user-info__label" for="lname">Last Name</label>
+              <input  class="user-info__input" type="text" id="lname">
+            </div>
+          </div>
+
+
+        <div>
+          <label for="Email">Email</label>
+          <input type="email" id="Email">
+        </div>
+
+        <span class="query-type-tittle">Query Type</span>
+
+        <div class="query-type-box">
+          <div>
+            <label class="query-type-box__label-box">
+              <input class="query-type-box__input" type="radio" name="query_type">
+              <span>General Enquiry</span>
+            </label>
+          </div>
+          <div>
+            <label  class="query-type-box__label-box">
+              <input class="query-type-box__input" type="radio" name="query_type">
+              <span>Support Request</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label for="textarea" >Message</label>
+
+          <textarea rows="5" id="textarea"></textarea>
+        </div>
+
+        <div class="communications-agreement">
+          
+          <label>
+            <input class="communications-agreement__checkbox" type="checkbox">
+            I consent to being contacted by the team
+          </label>
+        </div>
+
+        <div submit-button>
+          <input class="submit-button" type="submit">
+        </div>
+    </form>
+  </main>
+</body>
+</html>
