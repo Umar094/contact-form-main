@@ -13,6 +13,7 @@ const checkbox_box = document.getElementById('checkbox-box')
 
 form.addEventListener('submit', (e) =>{
     e.preventDefault()
+    
     inputCheck();
     let error =  inputCheck();
 
