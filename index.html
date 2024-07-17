@@ -5,66 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer> </script>
   <title>Frontend Mentor | Contact form</title>
-
+  <script defer src="script.js"></script>
 </head>
 <body>
+
+  <div id="success-message" class="success-message hidden">
+    <div>
+      <img src="assets/images/circle-check-regular.svg" alt="">
+      <p>Message Sent!</p>
+    </div>
+      
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>  
+
   <main class="container">
     <h2>Contact Us</h2>
-    <form class="form-container" action="">
-          <div class="user-info">
-            <div>
+    <form id="form" class="form-container" action="">
+        <div class="user-info">
+          <div class="user-info__box">
+            <div class="form-control user-info__personal-data">
               <label class="user-info__label" for="fname">First Name</label>
               <input class="user-info__input" type="text" id="fname">
+              <small></small>
             </div>
-            <div>
+            <div class=" user-info__personal-data">
               <label class="user-info__label" for="lname">Last Name</label>
               <input  class="user-info__input" type="text" id="lname">
+              <small></small>
             </div>
           </div>
-
-
-        <div>
-          <label for="Email">Email</label>
-          <input type="email" id="Email">
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <small></small>
+          </div>
         </div>
 
-        <span class="query-type-tittle">Query Type</span>
-
-        <div class="query-type-box">
-          <div>
+          
+        <div id="query-type-box" class="query-type-box">
+          <span class="query-type-box__query-type-tittle">Query Type</span>
+          <div class="query-type-box__label-wrapper">
             <label class="query-type-box__label-box">
-              <input class="query-type-box__input" type="radio" name="query_type">
+              <input class="query-type-box__input" type="radio" name="query_type" id="generalRadio">
               <span>General Enquiry</span>
             </label>
-          </div>
-          <div>
             <label  class="query-type-box__label-box">
-              <input class="query-type-box__input" type="radio" name="query_type">
+              <input class="query-type-box__input" type="radio" name="query_type" id="supportRadio">
               <span>Support Request</span>
             </label>
           </div>
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <label for="textarea" >Message</label>
+          <textarea rows="5" id="textarea"></textarea>
+          <small></small>
+        </div>
+
+        <div id="checkbox-box" class="communications-agreement">
+          <label class="form-control">
+            <input id="checkbox-input" class="communications-agreement__checkbox" type="checkbox">
+            <span>I consent to being contacted by the team</span>
+            </label>
+          <small class="communications-agreement__small-text"></small>
         </div>
 
         <div>
-          <label for="textarea" >Message</label>
-
-          <textarea rows="5" id="textarea"></textarea>
-        </div>
-
-        <div class="communications-agreement">
-          
-          <label>
-            <input class="communications-agreement__checkbox" type="checkbox">
-            I consent to being contacted by the team
-          </label>
-        </div>
-
-        <div submit-button>
-          <input class="submit-button" type="submit">
+          <button id="" class="submit-button__input" type="submit">Submit</button>
         </div>
     </form>
   </main>
+
 </body>
 </html>
