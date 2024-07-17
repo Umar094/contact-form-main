@@ -123,7 +123,7 @@ form{
     flex-direction: column;
     justify-content: center;
     gap: 9px;
-    position: absolute;
+    position:fixed;
     background-color: hsl(187, 24%, 22%);
     border-radius: 14px;
     color: hsl(0, 0%, 100%);
@@ -145,7 +145,6 @@ form{
 
 .hidden{
     display: none;
-    transition: 2000ms;
 }
 
 /*-----------------*/

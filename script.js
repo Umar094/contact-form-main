@@ -12,17 +12,19 @@ const checkbox = document.getElementById('checkbox-input')
 const checkbox_box = document.getElementById('checkbox-box')
 
 form.addEventListener('submit', (e) =>{
-
+    e.preventDefault()
     inputCheck();
+    let error =  inputCheck();
 
-    let errors = inputCheck();
-
-    if(errors > 0){
-        e.preventDefault()
+    if(error > 0){
+        inputCheck();
     }else{
-        success_message.classList.remove('hidden')  
-    }
+        success_message.classList.remove('hidden')
 
+        setTimeout(() => {
+            success_message.classList.add('hidden')
+        }, 4000);
+    }
 })
 
 
